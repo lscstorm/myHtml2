@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html body{
+            margin: 0;
+
+        }
+        a{
+            text-decoration: none;
+        }
+        .info{
+            width: 100%;
+            height: 34px;
+            background-color: rgb(238,238,238);
+        }
+        .info div{
+            margin: 0 auto;
+            padding-top: 3px;
+            width: 1181px;
+
+        }
+        .info span{
+            width: 124px;
+            color:#666;
+            font-size: 12px;
+        }
+        .info a{
+            color:#666;
+            font-size: 12px;
+        }
+        .down-arrow{
+            vertical-align: middle;
+            width: 20px;
+            height: 14px;
+            display: inline-block;
+            background-image: url("../resource/img/yh/down.png");
+        }
+        .phone{
+            vertical-align: middle;
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            background-image: url("../resource/img/yh/电话.png");
+        }
+        .my{
+            border-left: 1px solid #666;
+            /*border-right:1px solid #666;*/
+            padding: 0 20px;
+        }
+        .my:hover{
+            color: red;
+        }
+        /**************************/
+
+        .info2{
+            width: 100%;
+            height: 80px;
+
+
+        }
+        .info2-center{
+            margin:0 auto;
+            width: 1181px;
+            height: 80px;
+            padding: 27px 0 24px;
+
+        }
+
+        .logo{
+            width: 140px;
+            height: 80px;
+            float: left;
+        }
+
+        /**************/
+        .info3{
+            margin-top: 51px;
+            width: 100%;
+            height: 44px;
+
+        }
+        .info3-center{
+            width:1181px;
+            height: 44px;
+            margin: 0 auto;
+
+
+        }
+        .all-class{
+            width: 175px;
+            height: 16px;
+            background-color: #018DE2;
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+            padding: 13px 0 17px;
+            display: inline-block;
+            position: relative;
+            /*overflow: hidden;*/
+        }
+
+
+
+        .classes{
+            width: 144px;
+            height: 44px;
+            display: inline-block;
+            /*overflow: hidden;*/
+            text-align: center;
+        }
+        .a1{
+            width: 64px;
+            height: 44px;
+            padding: 0 40px;
+            color: #676767;
+            font-size: 16px;
+            vertical-align: middle;
+        }
+        .classes:hover .a1{
+            color: #f60;
+        }
+
+        /*************/
+        .info4{
+            width:100%;
+            height: 470px;
+            border: 1px solid green;
+            position: relative;
+            overflow: hidden; /*清除浏览器底部滑动条*/
+
+        }
+        .contain{
+            width:100%;
+            height: 470px;
+            position: relative;
+        }
+        .item{
+            width: 100%;
+            height: 470px;
+            position: absolute;
+        }
+        .item1{
+            background-image: url("../resource/img/yh/banner1.jpg");
+        }
+        .item2{
+            background-image: url("../resource/img/yh/banner2.jpg");
+        }
+        .item3{
+            background-image: url("../resource/img/yh/banner3.jpg");
+            background-repeat: round; /*拉伸背景图片*/
+        }
+        .itemBack{
+            background-image: url("../resource/img/yh/banner3.jpg");
+        }
+        .itemFirst{
+            background-image: url("../resource/img/yh/banner1.jpg");
+        }
+
+        .lists{
+            width: 60px;
+            height: 15px;
+            position: absolute;
+            bottom:25px;
+            left: 50%;
+            margin-left: -30px;
+        }
+
+        .list{
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: black;
+            margin-left: 5px;
+            float: left;
+        }
+
+        /****************/
+
+        .center{
+            background-color: rgb(242,242,242);
+            width: 100%;
+            height: 3750px;
+        }
+        .center-inner{
+            width: 1181px;
+            height: 100%;
+            margin: 0 auto;
+
+        }
+        .inner1{
+            width: 100%;
+            height: 180px;
+            padding: 10px 6px;
+        }
+
+
+        .inner3{
+            margin-top: 30px;
+            width: 1161px;
+            height: 350px;
+            background-color: white;
+            border:1px solid rgb(212,212,211);
+            border-top:2px solid rgb(0,141,225);
+            padding:10px;
+        }
+        .inner3-right{
+            width: 830px;
+            height:350px;
+            /*border: 1px solid rgb(228,228,228);*/
+            float: right;
+
+        }
+        .inner3-right img{
+            width: 205px;
+            height: 114px;
+            float: left;
+            border: 1px solid rgb(228,228,228);
+        }
+
+        .inner3-right img:hover{
+            border: 1px solid orangered;
+        }
+        .inner4{
+            margin-top: 28px;
+            position: relative;
+            padding-bottom: 10px;
+
+        }
+        .icon{
+            width: 31px;
+            height: 25px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        .car{
+
+            background-image: url("../resource/img/yh/汽车.png");
+        }
+        .inner4 a{
+            color: #666;
+            font-size: 18px;
+        }
+        .inner4 span{
+            color:#008CE1;
+            font-size: 26px;
+        }
+
+        .inner5{
+            width: 1161px;
+            height: 515px;
+            /*margin-top: 10px;*/
+            background-color: white;
+            border:1px solid rgb(212,212,211);
+            border-top:2px solid rgb(0,141,225);
+            padding:10px;
+            /*position: relative;*/
+        }
+        .inner5-right{
+            width: 830px;
+            height: 510px;
+            float: right;
+        }
+        .inner5-item{
+            width:266px;
+            height: 253px;
+            float: left;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .inner5-item img{
+            width: 266px;
+            height: 150px;
+        }
+        .ia:hover .ad{
+            display: block;
+        }
+
+        .inner5-item img:hover .ad{
+            display: block;
+        }
+
+        .text{
+            width:271px;
+            height: 103px;
+        }
+        .inner5-item:hover{
+            background-color: rgb(242,242,242);
+        }
+        .text p{
+            color: rgb(50,51,51);
+            font-size: 15px;
+            margin: 8px 0;
+        }
+        .name{
+            vertical-align: middle;
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background-image: url("../resource/img/yh/人.png");
+        }
+        .pho{
+            vertical-align: middle;
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background-image: url("../resource/img/yh/手机.png");
+        }
+        .home{
+            vertical-align: middle;
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background-image: url("../resource/img/yh/定位.png");
+        }
+        .ad{
+            width: 266px;
+            height: 25px;
+            position: absolute;
+            top:120px;
+            background-color: rgba(0,0,0,.4);
+            color: white;
+            padding-top:5px;
+            font-size: 16px;
+            text-align: center;
+            display: none;
+        }
+
+        /***********/
+        .inner6{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        /******/
+        .hotel{
+
+            background-image: url("../resource/img/yh/工具-酒店.png");
+        }
+
+
+        .men{
+            background-image: url("../resource/img/yh/男装.png");
+        }
+
+        .bulid{
+            background-image: url("../resource/img/yh/家装建材.png");
+        }
+
+
+
+        /********/
+        .footer{
+            width:100%;
+            height: 457px;
+            background-color: white;
+        }
+
+        .footer1{
+            width: 100%;
+            height: 85px;
+            background-color: rgb(226,226,226);
+        }
+        .footer1-inner{
+            padding-top: 25px;
+            width: 1181px;
+            height:60px;
+            margin: 0 auto;
+
+        }
+        .footer1-inner img{
+            vertical-align: middle;
+            margin-right: 25px;
+        }
+        .footer1-inner a{
+            color: #666;
+            font-size: 26px;
+            margin-right: 75px;
+        }
+
+        .footer2{
+            height: 245px;
+            border-bottom: 1px solid rgb(211,211,211);
+        }
+        .footer2-inner{
+            width: 1181px;
+            height: 145px;
+            margin: 0 auto;
+            padding-top: 30px;
+            padding-bottom: 70px;
+        }
+        .footer2-inner a{
+            margin-right: 30px;
+        }
+        .wm{
+            border: 1px solid rgb(211,211,211);
+          }
+        .about{
+            width: 515px;
+            height: 145px;
+            border-left:1px solid rgb(211,211,211);
+            float: right;
+
+        }
+        .about1{
+            width:100px;
+            height: 145px;
+            padding: 5px;
+            margin-right: 8px;
+            display: inline-block;
+        }
+        .about1 a{
+            width: 85px;
+            display: block;
+            margin-bottom: 15px;
+            margin-right: 0;
+            text-align: left;
+        }
+        .a11{
+            font-size: 18px;
+            color: rgb(50,51,51);
+        }
+        .a2{
+            font-size: 14px;
+            color: #666;
+        }
+        .a2:hover{
+            color:blue;
+        }
+        .wminfo{
+            width:105px;
+            height: 22px;
+            padding: 8px 24px 16px;
+            margin-right:30px;
+            display: inline-block;
+            color: #666;
+            font-size: 16px;
+            /*text-align: center;*/
+        }
+        .guanfang{
+            width: 27px;
+            height: 22px;
+            vertical-align: middle;
+            background-image: url("../resource/img/yh/二维码1微信.png");
+            display: inline-block;
+        }
+        .app{
+            width: 15px;
+            height: 22px;
+            vertical-align: middle;
+            background-image: url("../resource/img/yh/二维码2手机.png");
+            display: inline-block;
+        }
+        .footer3-inner{
+            width: 480px;
+            height: 124px;
+            padding-top: 40px;
+            margin: 0 auto;
+            /*border: 1px solid red;*/
+        }
+        .footer3-inner p{
+            font-size: 14px;
+            color: #999;
+            text-align: center;
+        }
+
+        /***********/
+        .search{
+
+            margin-left: 230px;
+            width: 500px;
+            height: 80px;
+            display: inline-block;
+            float: left;
+
+        }
+        .searchbox{
+            width: 498px;
+            height: 30px;
+            border: 2px solid #008CE1;
+            display: inline-block;
+        }
+        .searchbox input{
+            border:none;
+            width: 434px;
+            height: 30px;
+            padding: 0 8px;
+        }
+        .searchbox button{
+            width: 40px;
+            height: 30px;
+            background-color: #008CE1;
+            border: 1px solid #008CE1;
+            float: right;
+            background-image: url("../resource/img/yh/search.png");
+            cursor: pointer; /*鼠标移到button上变成手形状*/
+
+        }
+
+        .searcha1{
+            background-color:  #008CE1;
+            font-size: 14px;
+            color: white;
+            width: 50px;
+            height: 25px;
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+
+        .hot,.hots{
+            font-size: 12px;
+            color: #333;
+        }
+        .hots:hover{
+            color: red;
+        }
+
+        .right2{
+            background: #f9f9f9;
+            width: 90px;
+            height:22px;
+            border: 1px solid #d3d3d3;
+            padding: 5px 10px;
+            margin-top: 24px;
+            float: left;
+            color: #676767;
+            font-size: 14px;
+            position: relative;
+        }
+        .right2 img{
+            vertical-align: middle;
+        }
+        .down2{
+            position: absolute;
+            right: 0;
+        }
+
+        /********/
+        .hidden{
+            width: 175px;
+            height: 470px;
+            margin-top: 10px;
+            background-color: rgb(64,64,64);
+            position: absolute;/*脱离文档流，显示在最外层,且不占空间，让后面的元素保持原位*/
+            z-index: 2;     /*要配合z-index才行*/
+            display: none;
+        }
+        .kind{
+            width:175px;
+            height: 33px;
+            border-bottom:1px solid #6a6a6a;
+            color: white;
+            font-size: 14px;
+            text-align: center;
+            padding-top: 18px;
+        }
+
+        .all-class:hover .hidden{
+            display: block;
+        }
+        .all-class:hover .kind-inner{
+            display: none;
+        }
+
+        .kind:hover{
+            background-color: rgb(236,106,23);
+        }
+        .kind:hover .kind-inner{
+            display: block;
+        }
+
+        .kind-inner{
+            position: absolute;
+            top: 0;
+            left: 175px;
+            width: 365px;
+            height: 440px;
+            background: rgba(0,0,0,.4);
+            padding: 15px 25px 15px 25px;
+        }
+        .kind-inner a{
+            font-size: 14px;
+            color: white;
+        }
+        .kind-inner span{
+            width: 1px;
+            font-size: 16px;
+            color: white;
+            margin: 20px;
+        }
+        .kind-item:hover{
+            color: orangered;
+            text-decoration:underline;
+        }
+        .inner4 a{
+            margin-right: 60px;
+        }
+
+        .mark,.mark2,.mark3,.mark4{
+            width:114px;
+            height: 3px;
+            background-color: #FF6D00;
+            position: absolute;
+            bottom:-2px;
+
+        }
+
+        .tri{
+            width: 0;
+            height: 0;
+            border-width: 7px;
+            border-style: solid;
+            border-color: transparent;
+            border-bottom-color: #FF6D00;
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            margin-left: -3.5px;
+        }
+
+
+        .building{
+            width: 50px;
+            /*height: 500px;*/
+            position: fixed;
+            /*right: 0;*/
+            left: 50%;
+            margin-left: 610px;
+            top: 30px;
+            opacity: 0;
+            transition: all 1s;
+            background-color: white;
+            border:1px solid #E0E0E0;
+        }
+
+        .floor,.floor1,.floor2,.floor3{
+            width: 50px;
+            height: 53px;
+            border-bottom: 1px solid #E0E0E0;
+            cursor: pointer;
+            line-height: 26px;
+            text-align: center;
+        }
+        .floor1{
+            height: 50px;
+        }
+
+        .no-item{
+            display: block;
+            font-size: 15px;
+            color: #666666;
+        }
+        .no{
+            color: #018CDF;
+            font-size: 15px;
+        }
+        .floor:hover{
+            background-color:#018CDF;
+            color: white;
+        }
+        .floor:hover span{
+            color: white;
+        }
+        .floor img{
+            text-align: center;
+        }
+
+        .down-a{
+            width: 20px;
+            height: 20px;
+            background-image: url("../resource/img/yh/向下箭头.png");
+            float: right;
+            margin-right: 30px;
+        }
+        .all-class:hover .down-a{
+            transform: rotateZ(-180deg);
+            transition: all 500ms;
+        }
+        
+        .right-a{
+            width: 20px;
+            height: 20px;
+            background-image: url("../resource/img/yh/向右箭头.png");
+            float: right;
+            margin-right: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="outer">
+        <div class="header">
+            <div class="info">
+                <div>
+                    <span>所在城市 : 北京</span>
+                    <a href="#"><i class="down-arrow"></i></a>
+                    <span style="margin-left: 510px">您好,</span>
+                    <span style="color: rgb(255,108,0)">18252588695</span>
+                    <a href="#" style="margin:10px">退出</a>
+                    <a class="my" href="#">我的订单</a>
+                    <a class="my" href="#">我的消息</a>
+                    <a class="my" href="#" style=" border-left: 1px solid #666;border-right: 1px solid #666">我是商家</a>
+                    <i class="phone"></i>
+                    <span>400-800-8820</span>
+                </div>
+            </div>
+            <div class="info2">
+                <div class="info2-center">
+                    <img class="logo" src="../resource/img/yh/logo.jpg">
+                    <div class="search">
+                        <a href="#" class="searcha1">商家</a>
+                        <a href="#" class="searcha2">商品</a>
+                        <div class="searchbox"><input type="text" placeholder="请输入商家名称或关键字进行筛选"><button></button></div>
+                        <span class="hot">热门 ：</span>
+                        <a class="hots" href="#">酒店</a>
+                        <a class="hots" href="#">洗车</a>
+                        <a class="hots" href="#">餐饮</a>
+                        <a class="hots" href="#">进口</a>
+                        <a class="hots" href="#">旅游</a>
+                        <a class="hots" href="#">如家</a>
+                    </div>
+
+                    <a href="#">
+                        <div class="right2" style="margin-left: 55px">
+                            <img src="../resource/img/yh/myyh.png">  我的易和
+                            <img class="down2" src="../resource/img/yh/down2.png">
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="right2" style="margin-left: 20px">
+                            <img src="../resource/img/yh/shop.png">  购物车
+                            <img class="down2" src="../resource/img/yh/down2.png">
+                        </div>
+                    </a>
+
+                </div>
+
+
+            </div>
+            <div class="info3">
+                <div class="info3-center">
+                    <div class="all-class">行业分类
+                        <i class="down-a"></i>
+                        <div class="hidden">
+                                <div class="kind">
+                                    服装市场
+                                    <i class="right-a"></i>
+                                    <div class="kind-inner">
+                                        <nobr><a class="kind-item" href="#">男装</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">凉鞋凉拖</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">潮流女包</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">精品男包</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">功能箱包</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">其他服饰</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">女装</a><span>|</span></nobr>
+                                    </div>
+                                </div>
+
+                                <div class="kind">
+                                    建材装修
+                                    <i class="right-a"></i>
+                                    <div class="kind-inner">
+                                        <nobr><a class="kind-item" href="#">基础建材</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">卫浴洁具</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">厨卫电器</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">卫浴五金</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">地板地暖</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">灯具开关</a><span>|</span></nobr>
+                                    </div>
+                                </div>
+
+                                <div class="kind">
+                                    休闲娱乐
+                                    <i class="right-a"></i>
+                                    <div class="kind-inner">
+                                        <nobr><a class="kind-item" href="#">桌游/电玩</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">运动健身</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">足疗按摩</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">洗浴汗蒸</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">温泉</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">DIY手工</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">密室逃脱</a><span>|</span></nobr>
+                                    </div>
+                                </div>
+
+                                <div class="kind">
+                                    生活服务
+                                    <i class="right-a"></i>
+                                    <div class="kind-inner">
+                                        <nobr><a class="kind-item" href="#">面部护理</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">洗发护发</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">身体护理</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">口腔护理</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">女性护理</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">香水彩妆</a><span>|</span></nobr>
+                                    </div>
+                                </div>
+                                <div class="kind">
+                                    3C市场
+                                    <i class="right-a"></i>
+                                    <div class="kind-inner">
+                                        <nobr><a class="kind-item" href="#">面部护理</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">洗发护发</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">身体护理</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">口腔护理</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">女性护理</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">香水彩妆</a><span>|</span></nobr>
+                                    </div>
+                                </div>
+                                <div class="kind">
+                                    丽人
+                                    <i class="right-a"></i>
+                                    <div class="kind-inner">
+                                        <nobr><a class="kind-item" href="#">面部护理</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">洗发护发</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">身体护理</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">口腔护理</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">女性护理</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">香水彩妆</a><span>|</span></nobr>
+                                    </div>
+                                </div>
+                                <div class="kind">
+                                    本地生活
+                                    <i class="right-a"></i>
+                                    <div class="kind-inner">
+                                        <nobr><a class="kind-item" href="#">面部护理</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">洗发护发</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">身体护理</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">口腔护理</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">女性护理</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">香水彩妆</a><span>|</span></nobr>
+                                    </div>
+                                </div>
+                                <div class="kind">
+                                    购物
+                                    <i class="right-a"></i>
+                                    <div class="kind-inner">
+                                        <nobr><a class="kind-item" href="#">面部护理</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">洗发护发</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">身体护理</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">口腔护理</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">女性护理</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">香水彩妆</a><span>|</span></nobr>
+                                    </div>
+                                </div>
+                                <div class="kind" style="border-bottom: none">
+                                    电子数码
+                                    <i class="right-a"></i>
+                                    <div class="kind-inner">
+                                        <nobr><a class="kind-item" href="#">面部护理</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">洗发护发</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">身体护理</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">口腔护理</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">女性护理</a><span>|</span></nobr>
+                                        <nobr><a class="kind-item" href="#">香水彩妆</a><span>|</span></nobr>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="classes">
+                        <a href="#" class="a1">首页</a>
+                    </div>
+                    <div class="classes">
+                        <a href="#" class="a1">精选商家</a>
+                    </div>
+                    <div class="classes">
+                        <a href="#" class="a1">今日特价</a>
+                    </div>
+                    <div class="classes">
+                        <a href="#" class="a1">积分商城</a>
+                    </div>
+                    <div class="classes">
+                        <a href="#" style="color: #f60">加入易和</a>
+                    </div>
+                    <div class="classes" style="margin-left: 110px">
+                        <a href="#" class="a1">在线客服</a>
+                    </div>
+                </div>
+            </div>
+            <div class="info4">
+
+                <div class="contain" style="left: -100%;transition: all 1s">
+                    <div class="itemBack item" style="left: 0"></div>
+                    <div class="item1 item" style="left: 100%"></div>
+                    <div class="item2 item" style="left: 200%"></div>
+                    <div class="item3 item" style="left: 300%"></div>
+                    <div class="itemFirst item" style="left: 400%"></div>
+                </div>
+                <div class="lists">
+                    <div class="list" style="background-color: #FF6C00"></div>
+                    <div class="list"></div>
+                    <div class="list"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="center">
+            <div class="center-inner">
+                <div class="inner1">
+                    <a href="#"><img src="../resource/img/yh/当红好店.png"></a>
+                    <a href="#"><img src="../resource/img/yh/复古风.png"></a>
+                    <a href="#"><img src="../resource/img/yh/男装馆.png"></a>
+                    <a href="#"><img src="../resource/img/yh/美妆馆.png"></a>
+                </div>
+                <div class="inner2">
+                    <span style="font-size: 30px;color:#FE6E00;">精选</span>
+                    <span style="font-size: 30px;color:#008CE1;">品牌</span>
+                    <span style="font-size: 16px;color:#666; margin-left: 10px">Brand selection</span>
+                </div>
+                <div class="inner3">
+                    <a href="#"><img src="../resource/img/yh/x1.jpg"></a>
+                    <div class="inner3-right">
+                        <a href=""><img src="../resource/img/yh/x2.jpg"></a>
+                        <a href=""><img src="../resource/img/yh/x3.jpg"></a>
+                        <a href=""><img src="../resource/img/yh/x4.jpg"></a>
+                        <a href=""><img src="../resource/img/yh/x5.jpg"></a>
+                        <a href=""><img src="../resource/img/yh/x6.jpg"></a>
+                        <a href=""><img src="../resource/img/yh/x7.jpg"></a>
+                        <a href=""><img src="../resource/img/yh/x8.jpg"></a>
+                        <a href=""><img src="../resource/img/yh/x9.jpg"></a>
+                        <a href=""><img src="../resource/img/yh/x10.jpg"></a>
+                        <a href=""><img src="../resource/img/yh/x11.jpg"></a>
+                        <a href=""><img src="../resource/img/yh/x12.jpg"></a>
+                        <a href=""><img src="../resource/img/yh/x13.jpg"></a>
+                    </div>
+                </div>
+
+                <!--汽车装饰-->
+                <div class="inner4">
+                    <i class="car icon"></i>
+                    <span>汽车装饰</span>
+                    <a class="inner4a1" href="#" style="margin-left:200px">爆款推荐</a>
+                    <a class="inner4a1" href="#">精品女装</a>
+                    <a class="inner4a1" href="#">精品男装</a>
+
+                    <div class="mark" style="left: 340px;"><div class="tri"></div></div>
+                </div>
+                <!--汽车装饰-->
+                <div class="inner5">
+
+                    <a href="#"><img src="../resource/img/yh/c1.jpg"></a>
+                    <div class="inner5-right">
+                        <div class="inner5-item">
+                            <div class="ia">
+                                <img src="../resource/img/yh/c2.jpg">
+                                <div class="ad">
+                                    同城汽车装饰中心
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><i class="name"></i>  李杰</p>
+                                <p><i class="pho"></i>  18252588699</p>
+                                <p><i class="home"></i>  浙江省台州市温岭市人民西路281号</p>
+                            </div>
+                        </div>
+                        <div class="inner5-item">
+                            <div class="ia">
+                                <img src="../resource/img/yh/c3.jpg">
+                                <div class="ad">
+                                    同城汽车装饰中心
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><i class="name"></i>  李杰</p>
+                                <p><i class="pho"></i>  18252588699</p>
+                                <p><i class="home"></i>  浙江省台州市温岭市人民西路281号</p>
+                            </div>
+                        </div>
+                        <div class="inner5-item">
+                            <div class="ia">
+                                <img src="../resource/img/yh/c4.jpg">
+                                <div class="ad">
+                                    同城汽车装饰中心
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><i class="name"></i>  李杰</p>
+                                <p><i class="pho"></i>  18252588699</p>
+                                <p><i class="home"></i>  浙江省台州市温岭市人民西路281号</p>
+                            </div>
+                        </div>
+                        <div class="inner5-item">
+                            <div class="ia">
+                                <img src="../resource/img/yh/c5.jpg">
+                                <div class="ad">
+                                    同城汽车装饰中心
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><i class="name"></i>  李杰</p>
+                                <p><i class="pho"></i>  18252588699</p>
+                                <p><i class="home"></i>  浙江省台州市温岭市人民西路281号</p>
+                            </div>
+                        </div>
+                        <div class="inner5-item">
+                            <div class="ia">
+                                <img src="../resource/img/yh/c6.jpg">
+                                <div class="ad">
+                                    同城汽车装饰中心
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><i class="name"></i>  李杰</p>
+                                <p><i class="pho"></i>  18252588699</p>
+                                <p><i class="home"></i>  浙江省台州市温岭市人民西路281号</p>
+                            </div>
+                        </div>
+                        <div class="inner5-item">
+                            <div class="ia">
+                                <img src="../resource/img/yh/c7.jpg">
+                                <div class="ad">
+                                    同城汽车装饰中心
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><i class="name"></i>  李杰</p>
+                                <p><i class="pho"></i>  18252588699</p>
+                                <p><i class="home"></i>  浙江省台州市温岭市人民西路281号</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inner6">
+                    <a><img src="../resource/img/yh/footer3.jpg"></a>
+                </div>
+
+                <!--精品酒店-->
+                <div class="inner4">
+                    <i class="hotel icon"></i>
+                    <span>精品酒店</span>
+                    <a class="inner4a2" href="#" style="margin-left:200px">爆款推荐</a>
+                    <a class="inner4a2" href="#">精品女装</a>
+                    <a class="inner4a2" href="#">精品男装</a>
+                    <div class="mark2" style="left: 340px;"><div class="tri"></div></div>
+                </div>
+                <!--精品酒店-->
+                <div class="inner5">
+
+                <a href="#"><img src="../resource/img/yh/p1.jpg"></a>
+                <div class="inner5-right">
+                    <div class="inner5-item">
+                        <div class="ia">
+                            <img src="../resource/img/yh/p2.jpg">
+                            <div class="ad">
+                                三亚亚龙湾丽斯卡尔顿酒店
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p><i class="name"></i>  李杰</p>
+                            <p><i class="pho"></i>  18252588699</p>
+                            <p><i class="home"></i>  浙江省台州市温岭市人民西路281号</p>
+                        </div>
+                    </div>
+                    <div class="inner5-item">
+                        <div class="ia">
+                            <img src="../resource/img/yh/p3.png">
+                            <div class="ad">
+                                三亚亚龙湾丽斯卡尔顿酒店
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p><i class="name"></i>  李杰</p>
+                            <p><i class="pho"></i>  18252588699</p>
+                            <p><i class="home"></i>  浙江省台州市温岭市人民西路281号</p>
+                        </div>
+                    </div>
+                    <div class="inner5-item">
+                        <div class="ia">
+                            <img src="../resource/img/yh/p4.jpg">
+                            <div class="ad">
+                                三亚亚龙湾丽斯卡尔顿酒店
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p><i class="name"></i>  李杰</p>
+                            <p><i class="pho"></i>  18252588699</p>
+                            <p><i class="home"></i>  浙江省台州市温岭市人民西路281号</p>
+                        </div>
+                    </div>
+                    <div class="inner5-item">
+                        <div class="ia">
+                            <img src="../resource/img/yh/p5.jpg">
+                            <div class="ad">
+                                三亚亚龙湾丽斯卡尔顿酒店
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p><i class="name"></i>  李杰</p>
+                            <p><i class="pho"></i>  18252588699</p>
+                            <p><i class="home"></i>  浙江省台州市温岭市人民西路281号</p>
+                        </div>
+                    </div>
+                    <div class="inner5-item">
+                        <div class="ia">
+                            <img src="../resource/img/yh/p6.jpg">
+                            <div class="ad">
+                                三亚亚龙湾丽斯卡尔顿酒店
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p><i class="name"></i>  李杰</p>
+                            <p><i class="pho"></i>  18252588699</p>
+                            <p><i class="home"></i>  浙江省台州市温岭市人民西路281号</p>
+                        </div>
+                    </div>
+                    <div class="inner5-item">
+                        <div class="ia">
+                            <img src="../resource/img/yh/p7.jpg">
+                            <div class="ad">
+                                三亚亚龙湾丽斯卡尔顿酒店
+                            </div>
+                        </div>
+                        <div class="text">
+                            <p><i class="name"></i>  李杰</p>
+                            <p><i class="pho"></i>  18252588699</p>
+                            <p><i class="home"></i>  浙江省台州市温岭市人民西路281号</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+                <div class="inner6">
+                    <a><img src="../resource/img/yh/footer2.jpg"></a>
+                </div>
+
+                <!--男装-->
+                <div class="inner4">
+                    <i class="men icon"></i>
+                    <span>男装</span>
+                    <a class="inner4a3" href="#" style="margin-left:250px">爆款推荐</a>
+                    <a class="inner4a3" href="#">精品女装</a>
+                    <a class="inner4a3" href="#">精品男装</a>
+                    <div class="mark3" style="left: 340px;"><div class="tri"></div></div>
+                </div>
+                <!--男装-->
+                <div class="inner5">
+
+                    <a href="#"><img src="../resource/img/yh/n1.jpg"></a>
+                    <div class="inner5-right">
+                        <div class="inner5-item">
+                            <div class="ia">
+                                <img src="../resource/img/yh/n2.jpg">
+                                <div class="ad">
+                                    法曼斯fomoce男装
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><i class="name"></i>  李杰</p>
+                                <p><i class="pho"></i>  18252588699</p>
+                                <p><i class="home"></i>  浙江省台州市温岭市人民西路281号</p>
+                            </div>
+                        </div>
+                        <div class="inner5-item">
+                            <div class="ia">
+                                <img src="../resource/img/yh/n3.jpg">
+                                <div class="ad">
+                                    法曼斯fomoce男装
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><i class="name"></i>  李杰</p>
+                                <p><i class="pho"></i>  18252588699</p>
+                                <p><i class="home"></i>  浙江省台州市温岭市人民西路281号</p>
+                            </div>
+                        </div>
+                        <div class="inner5-item">
+                            <div class="ia">
+                                <img src="../resource/img/yh/n4.jpg">
+                                <div class="ad">
+                                    法曼斯fomoce男装
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><i class="name"></i>  李杰</p>
+                                <p><i class="pho"></i>  18252588699</p>
+                                <p><i class="home"></i>  浙江省台州市温岭市人民西路281号</p>
+                            </div>
+                        </div>
+                        <div class="inner5-item">
+                            <div class="ia">
+                                <img src="../resource/img/yh/n5.jpg">
+                                <div class="ad">
+                                    法曼斯fomoce男装
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><i class="name"></i>  李杰</p>
+                                <p><i class="pho"></i>  18252588699</p>
+                                <p><i class="home"></i>  浙江省台州市温岭市人民西路281号</p>
+                            </div>
+                        </div>
+                        <div class="inner5-item">
+                            <div class="ia">
+                                <img src="../resource/img/yh/n6.jpg">
+                                <div class="ad">
+                                    法曼斯fomoce男装
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><i class="name"></i>  李杰</p>
+                                <p><i class="pho"></i>  18252588699</p>
+                                <p><i class="home"></i>  浙江省台州市温岭市人民西路281号</p>
+                            </div>
+                        </div>
+                        <div class="inner5-item">
+                            <div class="ia">
+                                <img src="../resource/img/yh/n7.jpg">
+                                <div class="ad">
+                                    法曼斯fomoce男装
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><i class="name"></i>  李杰</p>
+                                <p><i class="pho"></i>  18252588699</p>
+                                <p><i class="home"></i>  浙江省台州市温岭市人民西路281号</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="inner6">
+                    <a><img src="../resource/img/yh/footer1.jpg"></a>
+                </div>
+
+                <!--建材-->
+                <div class="inner4">
+                    <i class="bulid icon"></i>
+                    <span>建材</span>
+                    <a class="inner4a4" href="#" style="margin-left:250px">爆款推荐</a>
+                    <a class="inner4a4" href="#">精品女装</a>
+                    <a class="inner4a4" href="#">精品男装</a>
+                    <div class="mark4" style="left: 340px;"><div class="tri"></div></div>
+                </div>
+                <!--建材-->
+                <div class="inner5">
+
+                    <a href="#"><img src="../resource/img/yh/j1.jpg"></a>
+                    <div class="inner5-right">
+                        <div class="inner5-item">
+                            <div class="ia">
+                                <img src="../resource/img/yh/j2.jpg">
+                                <div class="ad">
+                                    建筑家居饰装饰中心
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><i class="name"></i>  李杰</p>
+                                <p><i class="pho"></i>  18252588699</p>
+                                <p><i class="home"></i>  浙江省台州市温岭市人民西路281号</p>
+                            </div>
+                        </div>
+                        <div class="inner5-item">
+                            <div class="ia">
+                                <img src="../resource/img/yh/j3.jpg">
+                                <div class="ad">
+                                    建筑家居饰装饰中心
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><i class="name"></i>  李杰</p>
+                                <p><i class="pho"></i>  18252588699</p>
+                                <p><i class="home"></i>  浙江省台州市温岭市人民西路281号</p>
+                            </div>
+                        </div>
+                        <div class="inner5-item">
+                            <div class="ia">
+                                <img src="../resource/img/yh/j4.jpg">
+                                <div class="ad">
+                                    建筑家居饰装饰中心
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><i class="name"></i>  李杰</p>
+                                <p><i class="pho"></i>  18252588699</p>
+                                <p><i class="home"></i>  浙江省台州市温岭市人民西路281号</p>
+                            </div>
+                        </div>
+                        <div class="inner5-item">
+                            <div class="ia">
+                                <img src="../resource/img/yh/j5.jpg">
+                                <div class="ad">
+                                    建筑家居饰装饰中心
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><i class="name"></i>  李杰</p>
+                                <p><i class="pho"></i>  18252588699</p>
+                                <p><i class="home"></i>  浙江省台州市温岭市人民西路281号</p>
+                            </div>
+                        </div>
+                        <div class="inner5-item">
+                            <div class="ia">
+                                <img src="../resource/img/yh/j6.jpg">
+                                <div class="ad">
+                                    建筑家居饰装饰中心
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><i class="name"></i>  李杰</p>
+                                <p><i class="pho"></i>  18252588699</p>
+                                <p><i class="home"></i>  浙江省台州市温岭市人民西路281号</p>
+                            </div>
+                        </div>
+                        <div class="inner5-item">
+                            <div class="ia">
+                                <img src="../resource/img/yh/j7.jpg">
+                                <div class="ad">
+                                    建筑家居饰装饰中心
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><i class="name"></i>  李杰</p>
+                                <p><i class="pho"></i>  18252588699</p>
+                                <p><i class="home"></i>  浙江省台州市温岭市人民西路281号</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="inner6">
+                    <a><img src="../resource/img/yh/footer.jpg"></a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="footer">
+            <div class="footer1">
+                <div class="footer1-inner">
+                    <a href="#"><img src="../resource/img/yh/botton.png">正品保障</a>
+                    <a href="#"><img src="../resource/img/yh/botton1.png">全程追踪</a>
+                    <a href="#"><img src="../resource/img/yh/botton2.png">客户监督</a>
+                    <a href="#"><img src="../resource/img/yh/botton3.png">售后无忧</a>
+                    <a href="#" style="margin-right: 0"><img src="../resource/img/yh/botton4.png">准时送达</a>
+                </div>
+            </div>
+            <div class="footer2">
+                <div class="footer2-inner">
+                    <a href="#" style="margin-right: 80px"><img src="../resource/img/yh/底部易和图标.png"></a>
+                    <a href="#"><img class="wm" src="../resource/img/yh/二维码1.png"></a>
+                    <a href="#"><img class="wm" src="../resource/img/yh/二维码2.png"></a>
+                    <div class="about">
+                        <div class="about1" style="margin-left: 20px">
+                            <a class="a11" href="#">关于易和</a>
+                            <a class="a2" href="#">新用户注册</a>
+                            <a class="a2" href="#">在线下单</a>
+                            <a class="a2" href="#">支付方式</a>
+                        </div>
+                        <div class="about1">
+                            <a class="a11" href="#">配送说明</a>
+                            <a class="a2" href="#">运费说明</a>
+                            <a class="a2" href="#">配送方式</a>
+                            <a class="a2" href="#">发票说明</a>
+                        </div>
+                        <div class="about1">
+                            <a class="a11" href="#">售后服务</a>
+                            <a class="a2" href="#">退换货规则</a>
+                            <a class="a2" href="#">服务保障承诺</a>
+                            <a class="a2" href="#">验货与签收</a>
+                        </div>
+                        <div class="about1">
+                            <a class="a11" href="#">加盟易和</a>
+                            <a class="a2" href="#">加盟条款</a>
+                            <a class="a2" href="#">公司简介</a>
+                            <a class="a2" href="#">服务协议</a>
+                        </div>
+                    </div>
+
+                    <div class="wminfo" style="margin-left: 305px">
+                        <i class="guanfang"></i>    官方微信
+                    </div>
+                    <div class="wminfo">
+                        <i class="app"></i>    APP下载
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer3">
+                <div class="footer3-inner">
+                    <p>版权所有 © 2016易和生活港 保留所有权利 | 鲁ICP备：16022180号-1</p>
+                    <p style="color: #2784C7">易和生活 纵享品质</p>
+                </div>
+            </div>
+        </div>
+        <div class="building">
+            <div class="floor">
+                    <span class="no">1 &nbsp;F</span>
+                    <span class="no-item">汽车</span>
+            </div>
+            <div class="floor">
+                    <span class="no">2 &nbsp;F</span>
+                    <span class="no-item">酒店</span>
+            </div>
+            <div class="floor">
+                    <span class="no">3 &nbsp;F</span>
+                    <span class="no-item">男装</span>
+            </div>
+            <div class="floor">
+                    <span class="no">4 &nbsp;F</span>
+                    <span class="no-item">建材</span>
+            </div>
+            <div class="floor">
+                    <span class="no">5 &nbsp;F</span>
+                    <span class="no-item">建材</span>
+            </div>
+            <div class="floor">
+                    <span class="no">6 &nbsp;F</span>
+                    <span class="no-item">建材</span>
+            </div>
+            <div class="floor">
+                    <span class="no">7 &nbsp;F</span>
+                    <span class="no-item">建材</span>
+            </div>
+            <div class="floor">
+                    <span class="no">8 &nbsp;F</span>
+                    <span class="no-item">建材</span>
+            </div>
+            <div class="floor">
+                    <span class="no">9 &nbsp;F</span>
+                    <span class="no-item">建材</span>
+            </div>
+            <div class="floor1">
+                <img src="../resource/img/yh/up.png">
+                <span class="no-item">顶部</span>
+            </div>
+            <div class="floor2">
+                <img src="../resource/img/yh/pen.png">
+                <span class="no-item">反馈</span>
+            </div>
+            <div class="floor3">
+                <img src="../resource/img/yh/question.png">
+                <span class="no-item">问题</span>
+            </div>
+
+
+
+        </div>
+    </div>
+</body>
+<script>
+    var containDiv = document.getElementsByClassName("contain")[0];
+    var listDiv = document.getElementsByClassName("list");
+    var num1 = 1;
+    function moveImg() {
+
+        var left = containDiv.style.left;
+        left = left.substring(left.length-1,-1);
+
+        if(left == -400){
+            containDiv.style.transition = "";
+            containDiv.style.left = "-100%";
+            setTimeout(function () {
+                containDiv.style.transition = "all 1s";
+                containDiv.style.left = "-200%";
+            },50);
+        }else{
+            containDiv.style.left = left - 100 + "%";
+        }
+
+        console.log("num1的值为" + num1);
+
+        for(var i = 0; i < listDiv.length; i++){
+            listDiv[i].style.backgroundColor = "black";
+        }
+        if(num1 == listDiv.length){
+            num1 = 0;
+        }
+        listDiv[num1].style.backgroundColor = "#FF6C00";
+        num1++;
+
+    }
+   var num = setInterval(moveImg,5000);
+
+//    鼠标放到轮播图上时停止轮播
+    var info4Div = document.getElementsByClassName("info4")[0];
+    info4Div.onmouseover = function () {
+        clearInterval(num);
+    };
+    info4Div.onmouseout = function () {
+        num = setInterval(moveImg,5000);
+    };
+
+//    点圆点跳转图片
+    for(var i = 0; i<listDiv.length; i++){
+        listDiv[i].onclick = function (i) {
+            return function () {
+                var left = containDiv.style.left;
+                left = left.substring(left.length-1,-1);
+                left = -(i+1)*100;
+                console.log("此时left" + left);
+                containDiv.style.left = left+"%";
+//                到这里是实现点原点，轮播图要到对应图片
+                for(var j = 0; j < listDiv.length; j++){
+                    listDiv[j].style.backgroundColor = "black";
+                }
+                listDiv[i].style.backgroundColor = "#FF6C00";
+                num1 = i+1;
+//                到这里是实现改变num1，让圆点变色
+            }
+        }(i);
+    }
+
+
+    function moveMark(a,b) {
+//    0-340 1-470 2-600
+        var markleft = a.style.left;
+        markleft = markleft.substring(markleft.length-2,-1);
+        a.style.transition = "all 500ms";
+        for(var i = 0; i < b.length;i++){
+            b[i].onmouseover = function (i) {
+                return function () {
+                    markleft = 340 + i*130;
+                    a.style.left = markleft + "px";
+                }
+            }(i);
+        }
+    }
+
+
+    var inner4a1 = document.getElementsByClassName("inner4a1"); //b
+    var mark = document.getElementsByClassName("mark")[0]; //a
+    moveMark(mark,inner4a1);
+
+    var inner4a2 = document.getElementsByClassName("inner4a2");
+    var mark2 = document.getElementsByClassName("mark2")[0];
+    moveMark(mark2,inner4a2);
+
+    var inner4a3 = document.getElementsByClassName("inner4a3");
+    var mark3 = document.getElementsByClassName("mark3")[0];
+    moveMark(mark3,inner4a3);
+
+    var inner4a4 = document.getElementsByClassName("inner4a4");
+    var mark4 = document.getElementsByClassName("mark4")[0];
+    moveMark(mark4,inner4a4);
+
+//    滚轮事件
+    var building = document.getElementsByClassName("building")[0];
+    document.addEventListener("mousewheel",function () {
+
+//            通过设置document.body.scrollTop = xxx;让滚轮强制移动，即实现页面跳转
+
+        if(document.body.scrollTop > 800) {
+            building.style.opacity = 1;
+        }else{
+            building.style.opacity = 0;
+        }
+    })
+
+
+    var floor = document.getElementsByClassName("floor");
+    for(var i = 0; i < floor.length; i++){
+        floor[i].onclick = function (i) {
+            return function () {
+                document.body.scrollTop = 1350 + i*770;
+            }
+        }(i);
+    }
+
+    var topfloor = document.getElementsByClassName("floor1")[0];
+    topfloor.onclick = function () {
+          document.body.scrollTop = 0;
+          building.style.opacity = 0;
+    }
+
+</script>
+</html>
